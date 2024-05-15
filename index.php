@@ -16,7 +16,9 @@
     <main>
 <form action="">
     <input id="wachtwoord" type="text">
-    <button onclick="control()" type="submit"></button>
+    <button onclick="control()" type="submit">
+    <input type="submit">
+</button>
 </form>
     </main>
     <footer>
@@ -28,9 +30,9 @@
 <script>
     function control()
     {
-        var pass = Document.getElementById("wachtwoord");
+        var pass = Document.getElementById("wachtwoord").value;
 
-        if(pass == " ")
+        if(pass.trim() == "")
         {
             alert("je hebt nog geen wachtwoord ingevuld");
         }
