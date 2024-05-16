@@ -14,12 +14,8 @@
     include ('header.php');
     ?>
     <main>
-<form action="">
-    <input id="wachtwoord" type="text">
-    <button onclick="control()" type="submit">
-    <input type="submit">
-</button>
-</form>
+
+
     </main>
     <footer>
 
@@ -27,14 +23,3 @@
 </body>
 
 </html>
-<script>
-    function control()
-    {
-        var pass = Document.getElementById("wachtwoord").value;
-
-        if(pass.trim() == "")
-        {
-            alert("je hebt nog geen wachtwoord ingevuld");
-        }
-    }
-</script>

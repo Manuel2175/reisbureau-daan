@@ -11,14 +11,23 @@
 
 <body>
     <header>
+        <!-- header afbeelding waarbij er een lucht als achtergrond is
+             en een vliegtuig die van links naar rechts vliegt 
+             ook een button die als een "easter egg" word gebruikt 
+             dat als je op het vliegtuig drukt er iets grappigs gebeurt -->
+
         <section class="header-img">
             <marquee scrollamount="10" behavior="scroll" direction="right">
                 <button onclick="randomding()" type="button">
-                <img src="img/header_img/plane.png" alt="vliegtuig">
+                    <img src="img/header_img/plane.png" alt="vliegtuig" id="vliegtuig">
                 </button>
-                
+
             </marquee>
         </section>
+        <!-- einde luhct met vliegtuig -->
+
+        <!-- begin navigatie balk met elke knop voor aparta paginas 
+        en een klok -->
         <nav>
             <ul>
                 <li>
@@ -30,7 +39,7 @@
                 </li>
                 <li>
                     <a href="over-ons.php">
-                        <div class="header-knop" >
+                        <div class="header-knop">
 
                             <h3>Over ons</h3>
 
@@ -58,10 +67,11 @@
                         </div>
                     </a>
                 </li>
-                <li>    
-                        <div id="klok">
-                            
-                        </div>
+                <li>
+                    <!-- klok -->
+                    <div id="klok">
+                        klok
+                    </div>
 
                 </li>
             </ul>
@@ -71,14 +81,12 @@
 
 </html>
 <script>
-function randomding() {
+    // script voor het vlieguig easter egg
+    function randomding() {
 
-    // Get the body element
-    var body = document.body;
-    
-    // Set the body's HTML content to an empty string
-    body.innerHTML = "<div> <p>episch</p> </div>";
+        var body = document.body;
 
-  }
+        body.innerHTML = "<h1> <p>episch</p> </h1>";
+
+    }
 </script>
-
