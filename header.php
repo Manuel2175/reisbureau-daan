@@ -20,6 +20,7 @@
             <marquee scrollamount="10" behavior="scroll" direction="right">
                 <button onclick="randomding()" type="button">
                     <img src="img/header_img/plane.png" alt="vliegtuig" id="vliegtuig">
+
                 </button>
 
             </marquee>
@@ -68,15 +69,45 @@
                     </a>
                 </li>
                 <li>
-                    <!-- klok -->
-                    <div id="klok">
-                        klok
-                    </div>
 
+                    <div id="clock"></div>
                 </li>
             </ul>
         </nav>
     </header>
+    <script>
+        function randomding() {
+            // Get the body element
+            var body = document.body;
+
+            // Set the body's HTML content to an empty string
+            body.innerHTML = "<div> <p>episch</p> </div>";
+        }
+
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Voeg een nul toe voor een enkel cijfer
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            // Zet de tijd in het formaat HH:MM:SS
+            const timeString = hours + ':' + minutes + ':' + seconds;
+
+            // Update de klok in de HTML
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update de klok elke seconde
+        setInterval(updateClock, 1000);
+
+        // Initialiseer de klok bij het laden van de pagina
+        updateClock();
+    </script>
 </body>
 
 </html>
