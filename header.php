@@ -80,7 +80,7 @@
             // Get the body element
             var body = document.body;
 
-            // Set the body's HTML content to an empty string
+            // set de body naar een episch stukje tekst
             body.innerHTML = "<div> <p>episch</p> </div>";
         }
 
