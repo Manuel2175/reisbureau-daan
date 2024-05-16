@@ -11,14 +11,24 @@
 
 <body>
     <header>
+        <!-- header afbeelding waarbij er een lucht als achtergrond is
+             en een vliegtuig die van links naar rechts vliegt 
+             ook een button die als een "easter egg" word gebruikt 
+             dat als je op het vliegtuig drukt er iets grappigs gebeurt -->
+
         <section class="header-img">
             <marquee scrollamount="10" behavior="scroll" direction="right">
                 <button onclick="randomding()" type="button">
-                    <img src="img/header_img/plane.png" alt="vliegtuig">
+                    <img src="img/header_img/plane.png" alt="vliegtuig" id="vliegtuig">
+
                 </button>
 
             </marquee>
         </section>
+        <!-- einde luhct met vliegtuig -->
+
+        <!-- begin navigatie balk met elke knop voor aparta paginas 
+        en een klok -->
         <nav>
             <ul>
                 <li>
@@ -59,6 +69,7 @@
                     </a>
                 </li>
                 <li>
+
                     <div id="clock"></div>
                 </li>
             </ul>
@@ -100,3 +111,13 @@
 </body>
 
 </html>
+<script>
+    // script voor het vlieguig easter egg
+    function randomding() {
+
+        var body = document.body;
+
+        body.innerHTML = "<h1> <p>episch</p> </h1>";
+
+    }
+</script>

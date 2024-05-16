@@ -1,20 +1,30 @@
+/* weghalen overige margin en padding en alle text kleur zwart maken */
 * {
   padding: 0px;
   margin: 0px;
   color: black;
 }
+/* zorgt ervoor dat er een achtergrond afbeelding is van de lucht
+en dat die mooi word geschaald en niet zichzelf steeds herhaalt */
 .header-img {
   background-image: url(..//img/header_img/sky.png);
   background-repeat: no-repeat;
   background-size: 100vw;
   height: 25vh;
 }
+/* haalt alle a decoratie weg zodat de tekst ze eigen style behoud */
 a {
   text-decoration: none;
 }
+/* zorgt ervoor dat er 10 pixel ruimte om het vliegtuig heen zit */
 marquee {
   margin: 10px;
 }
+/* de navigatie balk style waarin die even breed is als je 
+scherm en 100px hoog is.
+ook word er met display flex gecentreerd 
+de border word weggehaald van elke kant behalve de onderkant 
+waarbij die 5px dik word en groove style krijgt en zwart is */
 nav {
   height: 100px;
   width: 100vw;
@@ -28,31 +38,38 @@ nav {
   border-style: groove;
   border-color: black;
 }
+/* haalt de list style weg zodat de list items hun eigen style behouden */
 li {
   list-style: none;
 }
+/* zorgt ervoor dat de lijst dezelfde breedte heeft als de nav
+en display word geinherit uit de nav
+vervolgens worden ze op een rij neergezet en even verdeeld
+over het beeld */
 ul {
   width: inherit;
-  display: flex;
+  display: inherit;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.header-knop  {
-  display: flex;
+/* de display word felx geinherit uit de ul vervolgens 
+word alles binnen de knop gecentreerd het blok is 50 bij 100px*/
+.header-knop {
+  display: inherit;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 100px;
 }
-button{
+/* haalt de standaart style van de button weg */
+button {
   all: unset;
 }
-button:hover{
-  cursor: pointer ;
-}
+/* zorgt ervoor dat de border boller 
+word en de achtergrond grijs word */
 .header-knop:hover {
   border-radius: 10px;
   opacity: 0.5;
-    background-color: rgb(196, 190, 190);
-    transition: 1s;
+  background-color: rgb(196, 190, 190);
+  transition: 1s;
 }
