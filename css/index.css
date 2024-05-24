@@ -1,12 +1,39 @@
-*{
-    font-family: "Inika", serif;
-    font-weight: 400;
-    font-style: normal;
+* {
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.landingspagina{
+.landingspagina {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  width: 100vw;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.reis-formulier{
     display: flex;
     justify-content: center;
     height: 10vh;
     width: 100vw;
+}
+.reis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(103, 131, 164, 1);
+    width: 70vw;
+    border-radius: 30px;
+}
+.reis-formulier input{
+    height: 50px;
+    border-radius: 50px;
+    width: 18%;
+    text-indent: 10px;
+    border: none;
+}
+.aangerade-reizen-blok{
+  
 }

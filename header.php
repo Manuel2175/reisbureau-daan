@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>opdracht</title>
 </head>
-
+<?php
+    include ('connection.php');
+?>
 <body>
     <header>
         <!-- header afbeelding waarbij er een lucht als achtergrond is
@@ -117,7 +119,7 @@
 
         var body = document.body;
 
-        body.innerHTML = "<h1> <p>episch</p> </h1>";
+        body.innerHTML = "<h1> epic </h1>";
 
     }
 </script>

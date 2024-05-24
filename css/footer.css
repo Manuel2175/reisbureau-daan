@@ -1,0 +1,44 @@
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: 30vh;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(103, 131, 164, 1);
+    text-align: center;
+}
+
+.nieuwsbrief{
+display: flex;
+height: 25vh;
+padding: 10px;
+flex-direction: column;
+justify-content: space-around;
+
+}
+input{
+    height: 50px;
+    border-radius: 50px;
+    width: 10vw;
+    text-indent: 10px;
+    border: none;
+}
+.populaire-reizen{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+footer img{
+height: 100px;
+width: 100px;
+}
+.social-media{
+display: flex;
+height: 25vh;
+padding: 10px;
+flex-direction: column;
+justify-content: center;
+}
