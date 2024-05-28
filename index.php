@@ -33,6 +33,7 @@
         </section>
 
         <section class="aangerade-reizen">
+            <!-- <div id="wrap"> -->
             <div class="aangerade-reizen-blok">
                 <img src="" alt="">
                 <div class="aangerade-reizen-text-blok">
@@ -80,6 +81,7 @@
                     </p>
                 </div>
             </div>  
+            <!-- </div> -->
         </section>
 
 
