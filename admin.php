@@ -16,51 +16,49 @@
     include ('connection.php');
     ?>
     <main>
-    <section class="landingspagina">
-    <h1>vul hier niewe locaties toe</h1>
+        <section class="landingspagina">
+            <h1>vul hier niewe locaties toe</h1>
         </section>
 
         <section class="reis-formulier">
-        <form class="reis" action="addreis.php" method="POST">
-            <input type="text" name="land" placeholder="land">
-            <input type="text" name="stad" placeholder="stad">
-            <input type="submit">
-        </form>
+            <form class="reis" action="addLocaties.php" method="POST">
+                <input type="text" name="land" placeholder="land">
+                <input type="text" name="stad" placeholder="stad">
+                <input type="submit">
+            </form>
         </section>
         <section class="landingspagina">
-    <h1>vul hier niewe reis in</h1>
+            <h1>vul hier niewe reis in</h1>
         </section>
 
         <section class="reis-formulier">
-        <form class="reis" action="addreis.php" method="POST">
-            <input type="text" name="reis" placeholder="reis">
-            <input type="text" name="prijs" placeholder="prijs">
-            <input type="text" name="datum" placeholder="datum" >
-            <input type="text" name="vluchtid" placeholder="vluchtid" >
-        
-            <!--select id="vluchten" name="vluchten">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select-->
-            
-            
-            <input type="submit">
-        </form>
+            <form class="reis" action="addreis.php" method="POST">
+                <input type="text" name="reis" placeholder="reis">
+                <input type="text" name="prijs" placeholder="prijs">
+                <input type="text" name="datum" placeholder="datum">
+
+                <select id="vluchten" name="vluchtid">
+                    <?php
+                    include ('getReizen.php');
+                    getvluchten($conn);
+                    ?>
+                </select>
+                <input type="text" name="img" placeholder="path naar img">
+                <input type="submit">
+            </form>
         </section>
         <section class="landingspagina">
-    <h1>vul hier nieuwe vluchten in</h1>
+            <h1>vul hier nieuwe vluchten in</h1>
         </section>
 
         <section class="reis-formulier">
-        <form class="reis" action="addVlucht.php" method="POST">
-            <input type="text" name="vluchtnummer" placeholder="vluchtnummer">
-            <input type="text" name="reistijd" placeholder="geschatte reistijd">
-            <input type="text" name="startplek" placeholder="startplek">
-            <input type="text" name="eindplek" placeholder="eindplek">
-            <input type="submit">
-        </form>
+            <form class="reis" action="addVlucht.php" method="POST">
+                <input type="text" name="vluchtnummer" placeholder="vluchtnummer">
+                <input type="text" name="reistijd" placeholder="geschatte reistijd">
+                <input type="text" name="startplek" placeholder="startplek">
+                <input type="text" name="eindplek" placeholder="eindplek">
+                <input type="submit">
+            </form>
         </section>
 
     </main>

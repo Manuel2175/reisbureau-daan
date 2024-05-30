@@ -2,9 +2,8 @@
   font-family: "Inika", serif;
   font-weight: 400;
   font-style: normal;
-
 }
-body{
+body {
   overflow-x: hidden;
 }
 .landingspagina {
@@ -30,6 +29,7 @@ body{
   width: 70vw;
   border-radius: 30px;
 }
+
 .reis-formulier input {
   height: 50px;
   border-radius: 50px;
@@ -46,17 +46,40 @@ body{
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-/* #wrap{
+
+
+.reisblok {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 281px;
+  width: 450px;
+  background-color: rgba(103, 131, 164, 1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px 90px  90px 50px;
+}
+.reisblok img {
+  height: 260px;
+  width: 210px;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+.tekstkant {
+  display: grid;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button{
   display: flex;
-  width: 100vw;
-  height: 80vh;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 50vw;
-  background-color: aqua;
-} */
-.aangerade-reizen-blok {
-  height: 300px;
-  width: 500px;
-  background-color: black;
+  border: 1px solid black;
+  height: 50px;
+  border-radius: 50px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(112, 145, 184, 1);
 }

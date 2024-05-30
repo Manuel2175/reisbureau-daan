@@ -16,6 +16,7 @@
     <?php
     include ('header.php');
     include ('connection.php');
+    require ('getReizen.php');
     ?>
     <main>
         <section class="landingspagina">
@@ -33,61 +34,15 @@
         </section>
 
         <section class="aangerade-reizen">
-            <!-- <div id="wrap"> -->
-            <div class="aangerade-reizen-blok">
-                <img src="" alt="">
-                <div class="aangerade-reizen-text-blok">
-                    <h3>
-                        reis
-                    </h3>
-                    <p>
-                        reis info
-                    </p>
-                </div>
-            </div>
-
-            <div class="aangerade-reizen-blok">
-                <img src="" alt="">
-                <div class="aangerade-reizen-text-blok">
-                    <h3>
-                        reis
-                    </h3>
-                    <p>
-                        reis info
-                    </p>
-                </div>
-            </div>
-
-            <div class="aangerade-reizen-blok">
-                <img src="" alt="">
-                <div class="aangerade-reizen-text-blok">
-                    <h3>
-                        reis
-                    </h3>
-                    <p>
-                        reis info
-                    </p>
-                </div>
-            </div>
-
-            <div class="aangerade-reizen-blok">
-                <img src="" alt="">
-                <div class="aangerade-reizen-text-blok">
-                    <h3>
-                        reis
-                    </h3>
-                    <p>
-                        reis info
-                    </p>
-                </div>
-            </div>  
-            <!-- </div> -->
+        <?php
+        getReizen($conn);
+        ?>
         </section>
 
 
     </main>
     <?php
-    include("footer.php");
+    include ("footer.php");
     ?>
 </body>
 

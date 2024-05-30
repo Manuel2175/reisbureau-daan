@@ -7,11 +7,7 @@ $datum = $_POST['datum'];
 $vluchtid = $_POST['vluchtid'];
 
 
-// // Check if the vluchtid exists
-// $sql = "SELECT vluchtid, startplek, eindplek FROM vluchten ";
-// $prepare = $conn->prepare($sql);
-// $prepare->execute();
-// $vluchtids = $prepare->fetchAll();
+
 
 // Insert into reizen table
 $sql = "INSERT INTO reizen (reisnaam, prijs, datum, vluchtid) VALUES (:reis, :prijs, :datum, :vluchtid)";
