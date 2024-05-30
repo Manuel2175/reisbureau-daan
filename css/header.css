@@ -73,3 +73,7 @@ word en de achtergrond grijs word */
   background-color: rgb(196, 190, 190);
   transition: 1s;
 }
+#clock{
+  scale: 2;
+  overflow-x: visible;
+}

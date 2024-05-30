@@ -1,0 +1,12 @@
+input {
+    height: 50px;
+    border-radius: 50px;
+    width: 18%;
+    text-indent: 10px;
+    border: none;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(103, 131, 164, 1);
+  }
