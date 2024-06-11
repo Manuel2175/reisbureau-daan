@@ -1,9 +1,10 @@
 <?php
 include ('connection.php');
 
-function getvluchten($conn)
+function getVluchten($conn)
 {
-    $sql = "SELECT vluchtid, startplek, eindplek FROM vluchten";
+   
+    $sql = "SELECT vluchtid, vertrekplek, eindplek FROM vluchten";
     $prepare = $conn->prepare($sql);
     $prepare->execute();
     $vluchts = $prepare->fetchAll();
@@ -11,10 +12,12 @@ function getvluchten($conn)
     foreach ($vluchts as $vlucht) {
         ?>
         <option value="<?php echo $vlucht['vluchtid']; ?>">
-            <?php echo $vlucht['vluchtid'] . ' - ' . $vlucht['startplek'] . ' - ' . $vlucht['eindplek']; ?>
+            <?php echo $vlucht['vluchtid'] . ' - ' . $vlucht['vertrekplek'] . ' - ' . $vlucht['eindplek']; ?>
         </option>
         <?php
     }
+
+
 }
 
 function getStartplek($conn)
@@ -26,9 +29,13 @@ function getStartplek($conn)
 
     foreach ($locaties as $locatie) {
         ?>
-        <option value="<?php echo $locatie['vluchtid']; ?>">
-            <?php echo  ' - ' . $locatie['startplek'] . ' - ' . $locatie['eindplek']; ?>
+        <option value="<?php echo $locatie['locatieid']; ?>">
+            <?php echo $locatie['stad']; ?>
         </option>
+        <option value="<?php echo $locatie['locatieid']; ?>">
+            <?php echo    $locatie['eindplek']; ?>
+        </option>
+
         <?php
     }
 }

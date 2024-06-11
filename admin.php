@@ -37,10 +37,10 @@
                 <input type="text" name="prijs" placeholder="prijs">
                 <input type="text" name="datum" placeholder="datum">
 
-                <select id="vluchten" name="vluchtid">
+                 <select id="vluchten" name="vluchtid">
                     <?php
                     include ('getReizen.php');
-                    getvluchten($conn);
+                    getVluchten($conn);
                     ?>
                 </select>
                 <input type="text" name="img" placeholder="path naar img">
@@ -62,8 +62,6 @@
         </section>
 
     </main>
-
-
 
     <?php
     include ("footer.php");

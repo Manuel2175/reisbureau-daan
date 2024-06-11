@@ -4,7 +4,9 @@ input {
     width: 18%;
     text-indent: 10px;
     border: none;
+  
   }
+
   form{
     display: flex;
     justify-content: center;
